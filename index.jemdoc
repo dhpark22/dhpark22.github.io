@@ -1,0 +1,64 @@
+# jemdoc: menu{MENU}{index.html}
+= Dohyung Park
+
+Graduate Student
+
+Dept. of Electrical and Computer Engineering
+
+The University of Texas at Austin
+
+Advisor : [https://hostdb.ece.utexas.edu/~sanghavi Sujay Sanghavi] and [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html Constantine Caramanis]
+
+\[[cv.pdf CV]\]
+
+== Contact
+
+- Email : 'dh' + (lastname) @ utexas.edu
+
+== Education
+#- Ph.D, ECE, The University of Texas at Austin, 2011 - Present
+- M.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
+-- Thesis : Performance-Complexity Tradeoffs of Rateless Codes
+-- Advisor : [http://itl.kaist.ac.kr/people.htm Sae-Young Chung]
+- B.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
+
+== Selected Publications
+. *Dohyung Park* and Sae-Young Chung, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4595351 Performance-complexity tradeoffs of rateless codes]," in Proc. IEEE International Symposium on Information Theory(ISIT), Toronto, Canada, July 2008.
+. *Dohyung Park*, Joonsung Kang, and Eung Sun Kim, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5647913 Ad hoc indoor peer- to-peer tracking using relative location estimation]," in Proc. International Conference on Indoor Positioning and Indoor Navigation(IPIN), ETH Zurich, Switzerland, Sept. 2010.
+#. *Dohyung Park*, Bang Chul Jung, and Won-Yong Shin, "Distributed opportunistic scheduling for IMAC: A sum-rate scaling perspective," submitted to IEEE Transactions on Vehicular Technology.
+#. Won-Yong Shin, *Dohyung Park*, and Bang Chul Jung, "Can one achieve multiuser diversity in uplink multi-cell networks?," to appear in IEEE Transactions on Communications.
+. Bang Chul Jung, *Dohyung Park*, and Won-Yong Shin, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6202627 Opportunistic interference mitigation achieves optimal degrees-of-freedom in wireless multi-cell uplink networks]," IEEE Transactions on Communications, vol. 60, no. 7, July 2012.
+#. Bang Chul Jung, *Dohyung Park*, and Won-Yong Shin, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5757912 A study on the optimal degrees-of-freedom of cellular networks: opportunistic interference mitigation]," in Proc. Asilomar Conference on Signals, Systems and Computers, Nov. 2010.
+. Namyoon Lee, *Dohyung Park*, and Young-Doo Kim, “[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5425352 Degrees of freedom on the K-user MIMO interference channel with constant channel coefficients for downlink communications],” in Proc. IEEE Global Communications Conference(GLOBECOM), 2009.
+#. *Dohyung Park*, Sang Won Choi, and Sae-Young Chung, "Introduction to multi- user information theory," Journal of Korea Information and Communications Society, Vol.25, No.5, May 2008. (Korean)
+#. *Dohyung Park*, Min-Gyu Kim, and Sae-Young Chung, "An overview of fountain codes," Journal of Korea Information and Communications Society, Vol.24, No.2, Apr. 2007. (Korean)
+#. Hye Won Chung, Sang-Woon Jeon, *Do-Hyung Park* and Sae-Young Chung, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4195450 Joint Determination of Power and Decoding Order for Successive Inter- and Intra-cell Interference Cancelation]," in Proc. the 7th International Conference of Advanced Communicationv Technology(ICACT), Pheonix park, Korea, Feb. 2007.
+
+== Experience
+- Research Staff, [http://www.sait.samsung.come Samsung Advanced Institute of Technology (SAIT)]
+#-- Mobile Indoor Localization Systems, Mar. 2009 - Jul. 2011
+#-- Interference Alignment for Cellular Systems, Aug. 2008 - Feb. 2009
+- Teaching Assistant, [http://www.ece.utexas.edu The University of Texas at Austin]
+-- Large-scale Optimization, Fall 2012.
+-- Communication Networks, Spring 2012.
+#-- EE360K Intro. to Digital Communications, Spring 2012.
+-- Software Design and Implemetation, Fall 2011.
+- Teaching Assistant, [http://www.ee.kaist.ac.kr Korea Advanced Institute of Science and Technology (KAIST)]
+-- Advanced Information Theory
+-- Advanced Coding Theory
+#- Research Assistant, [http://www.ee.kaist.ac.kr Korea Advanced Institute of Science and Technology (KAIST)]
+
+#== Courses
+
+#- Electrical Engineering : Probability and Stochastic Processes, Communication Systems, Advanced Communication Systems, Information Theory, Advanced Information Theory, Coding Theory, Advanced Coding Theory, Sparsity\/Structure\/Algorithms
+
+#- Computer Science : Machine Learning, Advanced Machine Learning
+
+#- Mathematics : Real Analysis, Theory of Probability, Numerical Linear Algebra
+
+#- Operations Research : Linear Programming, Nonlinear Programming, Large-scale Optimization
+
+== Fun links
+
+- [http://indigo.ece.neu.edu/~naderi/Claude%20Shannon.html Creative thinking (Claude E. Shannon)]
+
