@@ -23,14 +23,16 @@ Advisor : [https://hostdb.ece.utexas.edu/~sanghavi Sujay Sanghavi] and [http://u
 - B.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
 
 == Publications
-. *Dohyung Park*, Constantine Caramanis, and Sujay Sanghavi, "Greedy Subspace Clustering," in NIPS, 2014.
-. *Dohyung Park* and Sae-Young Chung, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4595351 Performance-complexity tradeoffs of rateless codes]," in Proc. IEEE International Symposium on Information Theory(ISIT), Toronto, Canada, July 2008.
-. *Dohyung Park*, Joonsung Kang, and Eung Sun Kim, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5647913 Ad hoc indoor peer- to-peer tracking using relative location estimation]," in Proc. International Conference on Indoor Positioning and Indoor Navigation(IPIN), ETH Zurich, Switzerland, Sept. 2010.
-#. *Dohyung Park*, Bang Chul Jung, and Won-Yong Shin, "Distributed opportunistic scheduling for IMAC: A sum-rate scaling perspective," submitted to IEEE Transactions on Vehicular Technology.
-#. Won-Yong Shin, *Dohyung Park*, and Bang Chul Jung, "Can one achieve multiuser diversity in uplink multi-cell networks?," to appear in IEEE Transactions on Communications.
+. *Dohyung Park*, Constantine Caramanis, and Sujay Sanghavi, "[nips2014_subspace.pdf Greedy Subspace Clustering]," in NIPS, 2014. ([greedysc_codes.zip matlab codes])
+
+(Before joining UT)
+
+. Won-Yong Shin, *Dohyung Park*, and Bang Chul Jung, "Can one achieve multiuser diversity in uplink multi-cell networks?," IEEE Transactions on Communications, vol. 60, no. 12, Dec. 2012.
 . Bang Chul Jung, *Dohyung Park*, and Won-Yong Shin, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=6202627 Opportunistic interference mitigation achieves optimal degrees-of-freedom in wireless multi-cell uplink networks]," IEEE Transactions on Communications, vol. 60, no. 7, July 2012.
-#. Bang Chul Jung, *Dohyung Park*, and Won-Yong Shin, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5757912 A study on the optimal degrees-of-freedom of cellular networks: opportunistic interference mitigation]," in Proc. Asilomar Conference on Signals, Systems and Computers, Nov. 2010.
-. Namyoon Lee, *Dohyung Park*, and Young-Doo Kim, “[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5425352 Degrees of freedom on the K-user MIMO interference channel with constant channel coefficients for downlink communications],” in Proc. IEEE Global Communications Conference(GLOBECOM), 2009.
+#. Bang Chul Jung, *Dohyung Park*, and Won-Yong Shin, "[http://ieeexplore.ieee.org/xpl/articleDetails.jsp?tp=&arnumber=5757912 A study on the optimal degree-of-freedoms of cellular networks: Opportunistic interference mitigation]", in Proc. Asilomar conference on Signals, Systems, and Computers, 2010.
+. *Dohyung Park*, Joonsung Kang, and Eung Sun Kim, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5647913 Ad hoc indoor peer- to-peer tracking using relative location estimation]," in Proc. International Conference on Indoor Positioning and Indoor Navigation(IPIN), ETH Zurich, Switzerland, Sept. 2010.
+#. Namyoon Lee, *Dohyung Park*, and Young-Doo Kim, “[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=5425352 Degrees of freedom on the K-user MIMO interference channel with constant channel coefficients for downlink communications],” in Proc. IEEE Global Communications Conference(GLOBECOM), 2009.
+. *Dohyung Park* and Sae-Young Chung, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4595351 Performance-complexity tradeoffs of rateless codes]," in Proc. IEEE International Symposium on Information Theory(ISIT), Toronto, Canada, July 2008.
 #. *Dohyung Park*, Sang Won Choi, and Sae-Young Chung, "Introduction to multi- user information theory," Journal of Korea Information and Communications Society, Vol.25, No.5, May 2008. (Korean)
 #. *Dohyung Park*, Min-Gyu Kim, and Sae-Young Chung, "An overview of fountain codes," Journal of Korea Information and Communications Society, Vol.24, No.2, Apr. 2007. (Korean)
 #. Hye Won Chung, Sang-Woon Jeon, *Do-Hyung Park* and Sae-Young Chung, "[http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=4195450 Joint Determination of Power and Decoding Order for Successive Inter- and Intra-cell Interference Cancelation]," in Proc. the 7th International Conference of Advanced Communicationv Technology(ICACT), Pheonix park, Korea, Feb. 2007.
