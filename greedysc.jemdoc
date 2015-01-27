@@ -1,0 +1,76 @@
+# jemdoc: menu{MENU}{greedysc.html}
+= Greedy Subspace Clustering
+
+~~~
+{}{img_left}{images/unionsubspaces.png}{Unions of subspaces}{}{300pt}{}
+Subspace clustering is the problem of fitting a collection of high-dimensional data points to a /union of subspaces/. This problem can be regarded as ``Mixture of PCA'' because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.
+
+
+Recent algorithms for subspace clustering are based on two steps. \[1-3,5,6\] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) State-of-the-art algorithms solve a convex program with size as large as the squared number of data points. \[1-3,7\] As the amount of the data increases, the computational cost becomes critical. Some greedy algorithms are proposed to reduce the cost \[5,6\], but they do not perform as well as the convex program based ones.
+
+Our algorithms are also /greedy/. They are /provable/ in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when $L$ $d$-dimensional subspaces are drawn uniformly at random in $\mathcal{R}^p$, and $n$ random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if $n = \Omega(d)$ and $\frac{d}{p} = O \left( \frac{\log n}{\log (ndL)} \right)$. This condition is no worse than the existing statistical guarantees.
+
+In practice, our greedy algorithm, which is in general significantly faster than solving a convex program, performs competitively against the state-of-the-art algorithms in real applications such as motion segmentation and face clustering. 
+For more detailed results in this project, please see our paper.
+~~~
+
+~~~
+{}{raw}
+<table id="TABLENAME" align=center>
+<tr class="r1">
+<td class="c1"></td><td class="c2"> SSC[1,2]      </td><td class="c3"> LRR[3]            </td><td class="c4"> SSC-OMP[5] </td><td class="c5"> TSC[6] </td><td class="c6"> LRSSC[7] </td><td class="c7"> <b>NSN+Spectral</b> </td><td class="c8"> <b>NSN+GSR</b> </td></tr>
+<tr class="r2"><td class="c1">Step 1. Neighborhood Construction </td><td class="c2"> <img class="eq" src="eqs/2349274112114421517-130.png" alt="ell_1" style="vertical-align: -3px" />-min. </td><td class="c3"> Nuclear norm min. </td><td class="c4"> OMP </td><td class="c5"> NN </td><td class="c6"> Hybrid <img class="eq" src="eqs/2349274112114421517-130.png" alt="ell_1" style="vertical-align: -3px" /> & Nuclear norm min. </td><td class="c7"> NSN </td><td class="c8"> NSN </td></tr>
+<tr class="r3"><td class="c1">Step 2. Clustering                </td><td class="c2" colspan="6"> Spectral Clustering     </td><td class="c8"> GSR 
+</td></tr></table>
+<br>
+~~~
+
+
+== Applications
+
+Subspace clustering has diverse applications such as computer vision(motion segmenation, face clustering, etc), system identification, gene expression analysis.
+
+- Motion segmentation : Given a collection of feature points extracted from a video sequence, the points of a rigidly moving object lies on a low-dimensional subspace. Based on this observation, we can segment the feature points with respect to the objects.
+~~~
+{}{raw}
+<table class="imgtable" align=center><tr>
+<td><img src="images/motionseg1.png" width=150 alt="Motion Segmentation 1"> &nbsp; </td>
+<td><img src="images/motionseg2.png" width=150 alt="Motion Segmentation 2"> &nbsp; </td>
+<td><img src="images/motionseg3.png" width=150 alt="Motion Segmentation 3"> &nbsp; </td>
+<td><img src="images/motionseg4.png" width=150 alt="Motion Segmentation 4"> &nbsp; </td>
+</tr></table>
+<center>(reference: Hopkins155 dataset [8])</center>
+<br>
+~~~
+
+- Face clustering : Under varying illumination conditions, the images of a face can be modeled by a low-dimensional subspace. Using subspace clustering algorithms, we can segment the images of different faces with respect to the faces.
+~~~
+{}{raw}
+<table class="imgtable" align=center><tr>
+<td><img src="images/face1.png" width=300 alt="Face clustering 1" style="border:5px solid blue"> &nbsp; </td>
+<td><img src="images/face2.png" width=300 alt="Face clustering 2" style="border:5px solid green"> &nbsp; </td>
+<td><img src="images/face3.png" width=300 alt="Face clustering 3" style="border:5px solid red"> &nbsp; </td>
+</tr></table>
+<center>(reference: Extended Yale B dataset [9,10])</center>
+<br>
+~~~
+
+== Paper
+- Dohyung Park, Constantine Caramanis, and Sujay Sanghavi, [http://arxiv.org/abs/1410.8864 Greedy Subspace Clustering], In Proceedings of Neural Information Processing Systems (NIPS), 2014. ([http://dhpark22.github.io/greedysc/greedysc_poster.pdf NIPS poster]) ([bibtex/pcs_greedysc14.bib bibtex]) 
+
+== Codes
+- [http://dhpark22.github.io/greedysc/greedysc_codes.zip Matlab codes]
+-- This package contains matlab functions for our algorithm, and the scripts that reproduce the tables and the figures in our paper. To run the scripts, you have to download the matlab codes of the competing algorithms from their corresponding links. Please read README.txt and follow the instructions.
+
+== References
+. E. Elhamifar and R. Vidal. Sparse subspace clustering: Algorithm, theory, and applications. IEEE Trans. Pattern Anal. Mach. Intelligence, 35(11):2765–2781, 2013.
+. M. Soltanolkotabi and E. J. Candes. A geometric analysis of subspace clustering with outliers. The Annals of Statistics,  40(4):2195–2238, 2012.
+. G. Liu, Z. Lin, S. Yan, J. Sun, Y. Yu, and Y. Ma. Robust recovery of subspace structures by low-rank representation. IEEE Trans. Pattern Anal. Mach. Intelligence, 35(1):171–184, 2013.
+. G. Chen and G. Lerman. Spectral curvature clustering. International Journal of Computer Vision, 81(3):317–330, 2009.
+. E. L. Dyer, A. C. Sankaranarayanan, and R. G. Baraniuk. Greedy feature selection for subspace clustering. The Journal of Machine Learning Research (JMLR), 14(1):2487–2517, 2013.
+. R. Heckel and H. Bolcskei. Robust subspace clustering via thresholding. arXiv preprint, arXiv:1307.4891v2, 2014.
+. Y.-X. Wang and H. Xu. Provable subspace clustering: When LRR meets SSC. In Proceedings of Neural Information Processing Systems (NIPS), 2013.
+. R. Tron and R. Vidal. A benchmark for the comparison of 3-d motion segmentation algorithms. In IEEE conference on Computer Vision and Pattern Recognition (CVPR), 2007.
+. A. S. Georghiades, P. N. Belhumeur, and D. J. Kriegman. From few to many: Illumination cone models for face recognition under variable lighting and pose. IEEE Trans. Pattern Anal. Mach. Intelligence, 23(6):643–660, 2001.
+. K. C. Lee, J. Ho, and D. Kriegman. Acquiring linear subspaces for face recognition under variable lighting. IEEE Trans. Pattern Anal. Mach. Intelligence, 27(5):684–698, 2005.
+
