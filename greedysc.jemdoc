@@ -6,11 +6,12 @@
 Subspace clustering is the problem of fitting a collection of high-dimensional data points to a /union of subspaces/. This problem can be regarded as ``Mixture of PCA'' because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.
 
 
-Recent algorithms for subspace clustering are based on two steps. \[1-3,5,6\] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) State-of-the-art algorithms solve a convex program with size as large as the squared number of data points. \[1-3,7\] As the amount of the data increases, the computational cost becomes critical. Some greedy algorithms are proposed to reduce the cost \[5,6\], but they do not perform as well as the convex program based ones.
+Recent algorithms for subspace clustering are based on two steps. \[1-3,5,6\] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) State-of-the-art algorithms solve a convex program with size as large as the squared number of data points. \[1-3,7\] As the amount of the data increases, the computational cost becomes critical. To reduce the cost, we proposed /greedy/ algorithms.
 
-Our algorithms are also /greedy/. They are /provable/ in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when $L$ $d$-dimensional subspaces are drawn uniformly at random in $\mathcal{R}^p$, and $n$ random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if $n = \Omega(d)$ and $\frac{d}{p} = O \left( \frac{\log n}{\log (ndL)} \right)$. This condition is no worse than the existing statistical guarantees.
+Our algorithms are /provable/ in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when $L$ $d$-dimensional subspaces are drawn uniformly at random in $\mathcal{R}^p$, and $n$ random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if $n = \Omega(d)$ and $\frac{d}{p} = O \left( \frac{\log n}{\log (ndL)} \right)$. This condition is no worse than the existing statistical guarantees.
 
-In practice, our greedy algorithm, which is in general significantly faster than solving a convex program, performs competitively against the state-of-the-art algorithms in real applications such as motion segmentation and face clustering. 
+In practice, our greedy algorithm, which is in general significantly faster than solving a convex program, performs competitively against the algorithms on real-world benchmark datasets. We observed that our algorithm outperforms the existing greedy algorithms. \[5,6\]
+
 For more detailed results in this project, please see our paper.
 ~~~
 
@@ -19,7 +20,7 @@ For more detailed results in this project, please see our paper.
 <table id="TABLENAME" align=center>
 <tr class="r1">
 <td class="c1"></td><td class="c2"> SSC[1,2]      </td><td class="c3"> LRR[3]            </td><td class="c4"> SSC-OMP[5] </td><td class="c5"> TSC[6] </td><td class="c6"> LRSSC[7] </td><td class="c7"> <b>NSN+Spectral</b> </td><td class="c8"> <b>NSN+GSR</b> </td></tr>
-<tr class="r2"><td class="c1">Step 1. Neighborhood Construction </td><td class="c2"> <img class="eq" src="eqs/2349274112114421517-130.png" alt="ell_1" style="vertical-align: -3px" />-min. </td><td class="c3"> Nuclear norm min. </td><td class="c4"> OMP </td><td class="c5"> NN </td><td class="c6"> Hybrid <img class="eq" src="eqs/2349274112114421517-130.png" alt="ell_1" style="vertical-align: -3px" /> & Nuclear norm min. </td><td class="c7"> NSN </td><td class="c8"> NSN </td></tr>
+<tr class="r2"><td class="c1">Step 1. Neighborhood Construction </td><td class="c2"> <img class="eq" src="eqs/2349274112114421517-130.png" alt="ell_1" style="vertical-align: -3px" />-min. </td><td class="c3"> Nuclear norm min. </td><td class="c4"> OMP </td><td class="c5"> Thresholding </td><td class="c6"> Hybrid <img class="eq" src="eqs/2349274112114421517-130.png" alt="ell_1" style="vertical-align: -3px" /> & Nuclear norm min. </td><td class="c7"> NSN </td><td class="c8"> NSN </td></tr>
 <tr class="r3"><td class="c1">Step 2. Clustering                </td><td class="c2" colspan="6"> Spectral Clustering     </td><td class="c8"> GSR 
 </td></tr></table>
 <br>
