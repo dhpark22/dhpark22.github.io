@@ -45,14 +45,6 @@ Subspace clustering has diverse applications such as computer vision(motion segm
 <br>
 ~~~
 
-~~~
-{}{table}{MotionSegmentationResult}
-  | SSC\[1,2\] | LRR\[3\] | SCC\[4\] | *NSN+Spectral* ||
-Mean Clustering Error                | 1.52 | 2.13 | 2.06 | 3.62 ||
-Median Clustering Error              | 0.00 | 2.13 | 2.06 | 3.62 ||
-Elapsed Time (on a single desktop)   | 3.03 | 3.42 | 1.28 | 0.25
-~~~
-
 - Face clustering : Under varying illumination conditions, the images of a face can be modeled by a low-dimensional subspace. Using subspace clustering algorithms, we can segment the images of different faces with respect to the faces.
 ~~~
 {}{raw}
@@ -63,14 +55,6 @@ Elapsed Time (on a single desktop)   | 3.03 | 3.42 | 1.28 | 0.25
 </tr></table>
 <center>(reference: Extended Yale B dataset [9,10])</center>
 <br>
-~~~
-
-~~~
-{}{table}{MotionSegmentationResult}
-  | SSC\[1,2\] | SSC-OMP\[5\] | TSC\[6\] | *NSN+Spectral* ||
-Mean Clustering Error                | 1.77 | 4.45 | 11.84 | 1.71 ||
-Median Clustering Error              | 0.00 | 1.17 | 2.06 | 3.62 ||
-Elapsed Time (on a single desktop)   | 3.03 | 3.42 | 1.28 | 0.25
 ~~~
 
 == Paper
