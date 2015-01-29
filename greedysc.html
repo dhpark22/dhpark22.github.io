@@ -24,8 +24,8 @@
 <img src="images/unionsubspaces.png" alt="Unions of subspaces" height="300pt" />&nbsp;</td>
 <td align="left"><p>(Joint work with <a href="http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html">Constantine Caramanis</a> and <a href="http://users.ece.utexas.edu/~sanghavi/">Sujay Sanghavi</a>)</p>
 <p>Subspace clustering is the problem of fitting a collection of high-dimensional data points to a <i>union of subspaces</i>. This problem can be regarded as &lsquo;&lsquo;Mixture of PCA&rsquo;&rsquo; because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.</p>
-<p>Recent algorithms for subspace clustering are based on two steps. [1-3,5,6] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) State-of-the-art algorithms solve a convex program with size as large as the squared number of data points. [1-3,7] As the amount of the data increases, the computational cost becomes critical. To reduce the cost, we proposed <i>greedy</i> algorithms.</p>
-<p>Our algorithms are <i>provable</i> in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when $L$ $d$-dimensional subspaces are drawn uniformly at random in $mathcal{R}^p$, and $n$ random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if $n = Omega(d)$ and $frac{d}{p} = O left( frac{log n}{log (ndL)} right)$. This condition is no worse than the existing statistical guarantees.</p>
+<p>Recent algorithms for subspace clustering are based on two steps. [1-3,5,6] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) The State-of-the-art ones solve a convex program with size as large as the squared number of data points. [1-3,7] As the amount of the data increases, the computational cost becomes critical. To reduce the cost, we proposed <i>greedy</i> algorithms.</p>
+<p>Our algorithms are <i>provable</i> in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when <img class="eq" src="eqs/9728029261-130.png" alt="L" style="vertical-align: -0px" /> <img class="eq" src="eqs/12800038501-130.png" alt="d" style="vertical-align: -1px" />-dimensional subspaces are drawn uniformly at random in <img class="eq" src="eqs/8421512998635562461-130.png" alt="mathcal{R}^p" style="vertical-align: -1px" />, and <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" /> random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if <img class="eq" src="eqs/1115987758788002440-130.png" alt="n = Omega(d)" style="vertical-align: -5px" /> and <img class="eq" src="eqs/772235780344593065-130.png" alt="frac{d}{p} = O left( frac{log n}{log (ndL)} right)" style="vertical-align: -15px" />. This condition is no worse than the existing statistical guarantees.</p>
 <p>In practice, our greedy algorithm, which is in general significantly faster than solving a convex program, performs competitively against the algorithms on real-world benchmark datasets. We observed that our algorithm outperforms the existing greedy algorithms. [5,6]</p>
 <p>For more detailed results in this project, please see our paper.</p>
 </td></tr></table>
@@ -101,7 +101,7 @@
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2015-01-29 11:15:41 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2015-01-29 12:39:35 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>
