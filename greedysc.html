@@ -22,9 +22,10 @@
 </div>
 <table class="imgtable"><tr><td>
 <img src="images/unionsubspaces.png" alt="Unions of subspaces" height="300pt" />&nbsp;</td>
-<td align="left"><p>Subspace clustering is the problem of fitting a collection of high-dimensional data points to a <i>union of subspaces</i>. This problem can be regarded as &lsquo;&lsquo;Mixture of PCA&rsquo;&rsquo; because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.</p>
+<td align="left"><p>(Joint work with <a href="http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html">Constantine Caramanis</a> and <a href="http://users.ece.utexas.edu/~sanghavi/">Sujay Sanghavi</a>)</p>
+<p>Subspace clustering is the problem of fitting a collection of high-dimensional data points to a <i>union of subspaces</i>. This problem can be regarded as &lsquo;&lsquo;Mixture of PCA&rsquo;&rsquo; because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.</p>
 <p>Recent algorithms for subspace clustering are based on two steps. [1-3,5,6] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) State-of-the-art algorithms solve a convex program with size as large as the squared number of data points. [1-3,7] As the amount of the data increases, the computational cost becomes critical. To reduce the cost, we proposed <i>greedy</i> algorithms.</p>
-<p>Our algorithms are <i>provable</i> in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when <img class="eq" src="eqs/9728029261-130.png" alt="L" style="vertical-align: -0px" /> <img class="eq" src="eqs/12800038501-130.png" alt="d" style="vertical-align: -1px" />-dimensional subspaces are drawn uniformly at random in <img class="eq" src="eqs/8421512998635562461-130.png" alt="mathcal{R}^p" style="vertical-align: -1px" />, and <img class="eq" src="eqs/14080042351-130.png" alt="n" style="vertical-align: -1px" /> random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if <img class="eq" src="eqs/1115987758788002440-130.png" alt="n = Omega(d)" style="vertical-align: -5px" /> and <img class="eq" src="eqs/772235780344593065-130.png" alt="frac{d}{p} = O left( frac{log n}{log (ndL)} right)" style="vertical-align: -15px" />. This condition is no worse than the existing statistical guarantees.</p>
+<p>Our algorithms are <i>provable</i> in the sense that the exactly correct clustering is guaranteed under certain conditions in the standard models. For example, when $L$ $d$-dimensional subspaces are drawn uniformly at random in $mathcal{R}^p$, and $n$ random data points are iid uniformly generated on each subspace, exact clustering is guaranteed with high probability if $n = Omega(d)$ and $frac{d}{p} = O left( frac{log n}{log (ndL)} right)$. This condition is no worse than the existing statistical guarantees.</p>
 <p>In practice, our greedy algorithm, which is in general significantly faster than solving a convex program, performs competitively against the algorithms on real-world benchmark datasets. We observed that our algorithm outperforms the existing greedy algorithms. [5,6]</p>
 <p>For more detailed results in this project, please see our paper.</p>
 </td></tr></table>
@@ -49,6 +50,12 @@
 </tr></table>
 <center>(reference: Hopkins155 dataset [8])</center>
 <br>
+<table id="MotionSegmentationResult">
+<tr class="r1"><td class="c1"></td><td class="c2"> SSC[1,2] </td><td class="c3"> LRR[3] </td><td class="c4"> SCC[4] </td><td class="c5"> <b>NSN+Spectral</b> </td></tr>
+<tr class="r2"><td class="c1">Mean Clustering Error                </td><td class="c2"> 1.52 </td><td class="c3"> 2.13 </td><td class="c4"> 2.06 </td><td class="c5"> 3.62 </td></tr>
+<tr class="r3"><td class="c1">Median Clustering Error              </td><td class="c2"> 0.00 </td><td class="c3"> 2.13 </td><td class="c4"> 2.06 </td><td class="c5"> 3.62 </td></tr>
+<tr class="r4"><td class="c1">Elapsed Time (on a single desktop)   </td><td class="c2"> 3.03 </td><td class="c3"> 3.42 </td><td class="c4"> 1.28 </td><td class="c5"> 0.25
+</td></tr></table>
 <ul>
 <li><p>Face clustering : Under varying illumination conditions, the images of a face can be modeled by a low-dimensional subspace. Using subspace clustering algorithms, we can segment the images of different faces with respect to the faces.</p>
 </li>
@@ -60,14 +67,20 @@
 </tr></table>
 <center>(reference: Extended Yale B dataset [9,10])</center>
 <br>
+<table id="MotionSegmentationResult">
+<tr class="r1"><td class="c1"></td><td class="c2"> SSC[1,2] </td><td class="c3"> SSC-OMP[5] </td><td class="c4"> TSC[6] </td><td class="c5"> <b>NSN+Spectral</b> </td></tr>
+<tr class="r2"><td class="c1">Mean Clustering Error                </td><td class="c2"> 1.77 </td><td class="c3"> 4.45 </td><td class="c4"> 11.84 </td><td class="c5"> 1.71 </td></tr>
+<tr class="r3"><td class="c1">Median Clustering Error              </td><td class="c2"> 0.00 </td><td class="c3"> 1.17 </td><td class="c4"> 2.06 </td><td class="c5"> 3.62 </td></tr>
+<tr class="r4"><td class="c1">Elapsed Time (on a single desktop)   </td><td class="c2"> 3.03 </td><td class="c3"> 3.42 </td><td class="c4"> 1.28 </td><td class="c5"> 0.25
+</td></tr></table>
 <h2>Paper</h2>
 <ul>
-<li><p>Dohyung Park, Constantine Caramanis, and Sujay Sanghavi, <a href="http://arxiv.org/abs/1410.8864">Greedy Subspace Clustering</a>, In Proceedings of Neural Information Processing Systems (NIPS), 2014. (<a href="http://dhpark22.github.io/greedysc/greedysc_poster.pdf">NIPS poster</a>) (<a href="bibtex/pcs_greedysc14.bib">bibtex</a>) </p>
+<li><p>Dohyung Park, Constantine Caramanis, and Sujay Sanghavi, <a href="http://arxiv.org/abs/1410.8864">Greedy Subspace Clustering</a>, In Proceedings of Neural Information Processing Systems (NIPS), 2014. (<a href="http://dhpark22.github.io/files/greedysc_poster.pdf">NIPS poster</a>) (<a href="bibtex/pcs_greedysc14.bib">bibtex</a>) </p>
 </li>
 </ul>
 <h2>Codes</h2>
 <ul>
-<li><p><a href="http://dhpark22.github.io/greedysc/greedysc_codes.zip">Matlab codes</a></p>
+<li><p><a href="http://dhpark22.github.io/files/greedysc_codes.zip">Matlab codes</a></p>
 <ul>
 <li><p>This package contains matlab functions for our algorithm, and the scripts that reproduce the tables and the figures in our paper. To run the scripts, you have to download the matlab codes of the competing algorithms from their corresponding links. Please read README.txt and follow the instructions.</p>
 </li>
@@ -100,7 +113,7 @@
 </ol>
 <div id="footer">
 <div id="footer-text">
-Page generated 2015-01-26 19:04:40 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+Page generated 2015-01-29 11:13:03 CST, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
 </div>
 </div>
 </td>

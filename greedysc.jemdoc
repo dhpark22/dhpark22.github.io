@@ -3,8 +3,9 @@
 
 ~~~
 {}{img_left}{images/unionsubspaces.png}{Unions of subspaces}{}{300pt}{}
-Subspace clustering is the problem of fitting a collection of high-dimensional data points to a /union of subspaces/. This problem can be regarded as ``Mixture of PCA'' because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.
+(Joint work with [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html Constantine Caramanis] and [http://users.ece.utexas.edu/~sanghavi/ Sujay Sanghavi])
 
+Subspace clustering is the problem of fitting a collection of high-dimensional data points to a /union of subspaces/. This problem can be regarded as ``Mixture of PCA'' because the points are to be partitioned into subsets each of which is modeled by a low-dimensional subspace. This model naturally arises in settings where data from multiple latent phenomena are mixed together and need to be separated.
 
 Recent algorithms for subspace clustering are based on two steps. \[1-3,5,6\] At the first step, a number of neighbor points are collected for each data point. Then the points are segmented using spectral clustering. (See the table below.) State-of-the-art algorithms solve a convex program with size as large as the squared number of data points. \[1-3,7\] As the amount of the data increases, the computational cost becomes critical. To reduce the cost, we proposed /greedy/ algorithms.
 
@@ -44,6 +45,14 @@ Subspace clustering has diverse applications such as computer vision(motion segm
 <br>
 ~~~
 
+~~~
+{}{table}{MotionSegmentationResult}
+  | SSC\[1,2\] | LRR\[3\] | SCC\[4\] | *NSN+Spectral* ||
+Mean Clustering Error                | 1.52 | 2.13 | 2.06 | 3.62 ||
+Median Clustering Error              | 0.00 | 2.13 | 2.06 | 3.62 ||
+Elapsed Time (on a single desktop)   | 3.03 | 3.42 | 1.28 | 0.25
+~~~
+
 - Face clustering : Under varying illumination conditions, the images of a face can be modeled by a low-dimensional subspace. Using subspace clustering algorithms, we can segment the images of different faces with respect to the faces.
 ~~~
 {}{raw}
@@ -56,11 +65,19 @@ Subspace clustering has diverse applications such as computer vision(motion segm
 <br>
 ~~~
 
+~~~
+{}{table}{MotionSegmentationResult}
+  | SSC\[1,2\] | SSC-OMP\[5\] | TSC\[6\] | *NSN+Spectral* ||
+Mean Clustering Error                | 1.77 | 4.45 | 11.84 | 1.71 ||
+Median Clustering Error              | 0.00 | 1.17 | 2.06 | 3.62 ||
+Elapsed Time (on a single desktop)   | 3.03 | 3.42 | 1.28 | 0.25
+~~~
+
 == Paper
-- Dohyung Park, Constantine Caramanis, and Sujay Sanghavi, [http://arxiv.org/abs/1410.8864 Greedy Subspace Clustering], In Proceedings of Neural Information Processing Systems (NIPS), 2014. ([http://dhpark22.github.io/greedysc/greedysc_poster.pdf NIPS poster]) ([bibtex/pcs_greedysc14.bib bibtex]) 
+- Dohyung Park, Constantine Caramanis, and Sujay Sanghavi, [http://arxiv.org/abs/1410.8864 Greedy Subspace Clustering], In Proceedings of Neural Information Processing Systems (NIPS), 2014. ([http://dhpark22.github.io/files/greedysc_poster.pdf NIPS poster]) ([bibtex/pcs_greedysc14.bib bibtex]) 
 
 == Codes
-- [http://dhpark22.github.io/greedysc/greedysc_codes.zip Matlab codes]
+- [http://dhpark22.github.io/files/greedysc_codes.zip Matlab codes]
 -- This package contains matlab functions for our algorithm, and the scripts that reproduce the tables and the figures in our paper. To run the scripts, you have to download the matlab codes of the competing algorithms from their corresponding links. Please read README.txt and follow the instructions.
 
 == References
