@@ -25,7 +25,7 @@ Advisor : [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html 
 == Publications
 #- Efficient Algorithms for Subspace Clustering, \n Dohyung Park, Constantine Caramanis, Sujay Sanghavi \n Preprint
 
-#- Finding Low-rank Solutions Efficiently and Provably, \n Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi \n Preprint
+- [http://arxiv.org/abs/1606.03168 Finding Low-rank Solutions to Matrix Problems Efficiently and Provably], \n Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi \n Preprint
 
 - [http://arxiv.org/abs/1606.01316 Provable Non-convex Projected Gradient Descent for A Class of Constrained Matrix Optimization Problems] \n Dohyung Park, Anastasios Kyrillidis, Srinadh Bhojanapalli, Constantine Caramanis, Sujay Sanghavi \n Preprint
 
