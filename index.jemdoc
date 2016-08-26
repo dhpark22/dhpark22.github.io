@@ -16,11 +16,11 @@ Advisor : [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html 
 - Email : 'dh' + (lastname) @ utexas.edu
 
 == Education
-- Ph.D, ECE, The University of Texas at Austin, 2011 - 2016 (expected)
--- Thesis (tentative) : Efficient Non-convex Algorithms for Large-scale Learning Problems
+- Ph.D, ECE, The University of Texas at Austin, 2011 - 2016
+#-- Thesis : Efficient Non-convex Algorithms for Large-scale Learning Problems
 - M.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
--- Thesis : Performance-Complexity Tradeoffs of Rateless Codes
--- Advisor : [http://itl.kaist.ac.kr/people.htm Sae-Young Chung]
+#-- Thesis : Performance-Complexity Tradeoffs of Rateless Codes
+#-- Advisor : [http://itl.kaist.ac.kr/people.htm Sae-Young Chung]
 - B.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
 
 == Publications
@@ -28,9 +28,9 @@ Advisor : [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html 
 
 - [http://arxiv.org/abs/1606.03168 Finding Low-rank Solutions to Matrix Problems Efficiently and Provably], \n Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi \n Preprint
 
-- [http://arxiv.org/abs/1606.01316 Provable Non-convex Projected Gradient Descent for A Class of Constrained Matrix Optimization Problems] \n Dohyung Park, Anastasios Kyrillidis, Srinadh Bhojanapalli, Constantine Caramanis, Sujay Sanghavi \n submitted to NIPS
+- [http://arxiv.org/abs/1606.01316 Provable Non-convex Projected Gradient Descent for A Class of Constrained Matrix Optimization Problems] \n Dohyung Park, Anastasios Kyrillidis, Srinadh Bhojanapalli, Constantine Caramanis, Sujay Sanghavi \n Preprint
 
-- [http://arxiv.org/abs/1605.07784 Fast Algorithms for Robust PCA via Gradient Descent], \n Xinyang Yi, Dohyung Park, Yudong Chen, Constantine Caramanis \n submitted to NIPS ([http://dhpark22.github.io/files/RPCA_GD.zip codes])
+- [http://arxiv.org/abs/1605.07784 Fast Algorithms for Robust PCA via Gradient Descent], \n Xinyang Yi, Dohyung Park, Yudong Chen, Constantine Caramanis \n Neural Information Processing Systems (NIPS), 2016. ([http://dhpark22.github.io/files/RPCA_GD.zip codes])
 
 - [http://arxiv.org/abs/1507.04457 Preference Completion: Large-scale Collaborative Ranking from Pairwise Comparison], \n Dohyung Park, Joe Neeman, Jin Zhang, Sujay Sanghavi, Inderjit S. Dhillon \n
 International Conference on Machine Learning (ICML), 2015 ([https://github.com/dhpark22/collranking GitHub]) ([files/collranking_slides.pdf slides])
