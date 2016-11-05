@@ -1,13 +1,9 @@
 # jemdoc: menu{MENU}{index.html}, analytics{UA-56234838-1}
 = Dohyung Park
 
-Ph.D. Candidate
+I recently joined Facebook as a research scientist.
 
-Dept. of Electrical and Computer Engineering
-
-The University of Texas at Austin
-
-Advisor : [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html Constantine Caramanis] and [https://hostdb.ece.utexas.edu/~sanghavi Sujay Sanghavi]
+I obtained my Ph.D. in Electrical and Computer Engineering at UT Austin, advised by [https://hostdb.ece.utexas.edu/~sanghavi Prof. Sujay Sanghavi] and [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html Prof. Constantine Caramanis]. Before joining UT, I worked as a research staff member at [http://www.sait.samsung.com Samsung Advanced Institute of Technology]. Before then, I received my B.S. and M.S. degrees from [http://ee-new.kaist.ac.kr KAIST].
 
 \[[cv_DohyungPark.pdf CV]\]
 
@@ -16,12 +12,12 @@ Advisor : [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html 
 - Email : 'dh' + (lastname) @ utexas.edu
 
 == Education
-- Ph.D, ECE, The University of Texas at Austin, 2011 - 2016
-#-- Thesis : Efficient Non-convex Algorithms for Large-scale Learning Problems
-- M.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
+- Ph.D, ECE, The University of Texas at Austin
+-- Thesis : Efficient Non-convex Algorithms for Large-scale Learning Problems
+- B.S., M.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
 #-- Thesis : Performance-Complexity Tradeoffs of Rateless Codes
 #-- Advisor : [http://itl.kaist.ac.kr/people.htm Sae-Young Chung]
-- B.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
+#- B.S., EE, Korea Advanced Institute of Science and Technology (KAIST)
 
 == Publications
 #- Efficient Algorithms for Subspace Clustering, \n Dohyung Park, Constantine Caramanis, Sujay Sanghavi \n Preprint
