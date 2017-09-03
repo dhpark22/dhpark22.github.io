@@ -5,8 +5,6 @@ I recently joined Facebook as a research scientist.
 
 I obtained my Ph.D. in Electrical and Computer Engineering at UT Austin, advised by [http://users.ece.utexas.edu/~sanghavi Prof. Sujay Sanghavi] and [http://users.ece.utexas.edu/~cmcaram/constantine_caramanis/Home.html Prof. Constantine Caramanis]. Before joining UT, I worked as a research staff member at [http://www.sait.samsung.com Samsung Advanced Institute of Technology]. Before then, I received my B.S. and M.S. degrees from [http://ee-new.kaist.ac.kr KAIST].
 
-\[[cv_DohyungPark.pdf CV]\]
-
 == Contact
 
 - Email : 'dh' + (lastname) @ utexas.edu
@@ -25,6 +23,8 @@ I obtained my Ph.D. in Electrical and Computer Engineering at UT Austin, advised
 - [http://arxiv.org/abs/1606.03168 Finding Low-rank Solutions to Matrix Problems Efficiently and Provably], \n Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, and Sujay Sanghavi \n Preprint
 
 - [http://arxiv.org/abs/1606.01316 Provable Non-convex Projected Gradient Descent for A Class of Constrained Matrix Optimization Problems] \n Dohyung Park, Anastasios Kyrillidis, Srinadh Bhojanapalli, Constantine Caramanis, Sujay Sanghavi \n Preprint
+
+- [https://arxiv.org/abs/1609.03240 Non-square Matrix Sensing without Spurious Local Minima via The Burer-Monteiro Approach] \n Dohyung Park, Anastasios Kyrillidis, Constantine Caramanis, Sujay Sanghavi \n International Conference on Artificial Intelligence and Statistics (AISTATS), 2017.
 
 - [http://arxiv.org/abs/1605.07784 Fast Algorithms for Robust PCA via Gradient Descent], \n Xinyang Yi, Dohyung Park, Yudong Chen, Constantine Caramanis \n Neural Information Processing Systems (NIPS), 2016. ([http://www.yixinyang.org/code/RPCA_GD.zip codes])
 
